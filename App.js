@@ -13,8 +13,8 @@ export default function App() {
         <ImageViewer placeholderImageSource={PlaceholderImage} />
       </View>
       <View style={styles.footerContainer}>
-        <Button label="Choisir cette photo" />
-        <Button label="Use this photo" />
+        <Button label="Choisir une photo" />
+        <Button label="Utiliser cette photo" />
       </View>
       <StatusBar style="auto" />
     </View>
@@ -22,7 +22,15 @@ export default function App() {
 }
 
 const styles = StyleSheet.create({
-  // Styles that are unchanged from previous step are hidden for brevity
+  container: {
+    flex: 1,
+    backgroundColor: "#25292e",
+    alignItems: "center",
+  },
+  imageContainer: {
+    flex: 1,
+    paddingTop: 58,
+  },
   footerContainer: {
     flex: 1 / 3,
     alignItems: "center",
